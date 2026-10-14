@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="Precious Salako's data analytics portfolio: Power BI dashboards, SQL analysis, Python, machine learning, and a Grafana learning lab.">
+  <meta property="og:title" content="Precious Salako — Data into decisions">
+  <meta property="og:description" content="An interactive data analytics portfolio featuring business intelligence, Python, SQL, machine learning, and an observability learning lab.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://salako-precious.github.io/">
+  <link rel="canonical" href="https://salako-precious.github.io/">
+  <title>Precious Salako | Data Analytics Portfolio</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Precious Salako, home">
+      <span class="brand-mark">PS<span>.</span></span>
+      <span class="brand-copy"><strong>Precious Salako</strong><small>DATA · INSIGHT · IMPACT</small></span>
+    </a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">☰</button>
+    <nav class="nav" id="primary-nav" aria-label="Primary navigation">
+      <a href="#projects">Projects</a>
+      <a href="#toolkit">Toolkit</a>
+      <a href="#grafana">Grafana lab</a>
+      <a href="#about">About</a>
+      <a class="nav-contact" href="#contact">Let's connect <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero page-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> OPEN TO DATA ANALYST OPPORTUNITIES</div>
+        <h1>I turn data into <span class="gradient-text">clearer decisions.</span></h1>
+        <p class="hero-lede">I’m Precious Salako, a data analyst growing into data science. I work across SQL, Excel, Power BI and Python to clean data, explore what it says, and build visuals people can act on.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my projects <span aria-hidden="true">↘</span></a>
+          <a class="button button-quiet" href="https://github.com/salako-precious" target="_blank" rel="noreferrer">GitHub profile <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-proof">
+          <div><strong>BI</strong><span>Dashboards & reporting</span></div>
+          <div><strong>SQL</strong><span>Queries & data shaping</span></div>
+          <div><strong>ML</strong><span>Model comparison</span></div>
+        </div>
+      </div>
+
+      <div class="control-room" aria-label="Interactive analytics preview">
+        <div class="control-topline">
+          <div class="control-title"><span class="window-dot dot-red"></span><span class="window-dot dot-yellow"></span><span class="window-dot dot-green"></span><strong>ANALYTICS / OBSERVABILITY LAB</strong></div>
+          <span class="mini-tag"><span class="pulse-dot"></span> DEMO STREAM</span>
+        </div>
+        <div class="control-subtitle"><span>Browser-generated telemetry</span><span id="clock">--:--:--</span></div>
+        <div class="live-metrics">
+          <div class="live-metric"><span>EVENTS / MIN</span><strong id="event-rate">128</strong><small id="event-change">+4.2% <i>↗</i></small></div>
+          <div class="live-metric"><span>PIPELINE STATUS</span><strong class="healthy-text"><span class="tiny-check">✓</span> Healthy</strong><small>Local simulation</small></div>
+          <div class="live-metric"><span>REFRESH</span><strong>3 sec</strong><small>Auto-updating</small></div>
+        </div>
+        <div class="live-chart-heading"><div><strong>Signal over time</strong><span>Illustrative event rate · not production data</span></div><span class="chart-live-label"><span class="pulse-dot"></span> STREAMING</span></div>
+        <div class="live-chart-shell"><canvas id="live-chart" role="img" aria-label="Animated simulated time series of a demo event stream. This is not live production data.">Simulated time-series chart.</canvas></div>
+        <div class="chart-axis"><span>60 sec ago</span><span>30 sec ago</span><span>Now</span></div>
+        <div class="control-bottom"><span><span class="legend-line"></span> Event rate</span><span>Source: in-browser demo</span><button id="pause-stream" class="text-button" type="button" aria-pressed="false">Pause stream</button></div>
+        <div class="simulation-note"><span aria-hidden="true">ⓘ</span> This animated stream demonstrates dashboard behaviour only. It is simulated until connected to a real data source.</div>
+      </div>
+    </section>
+
+    <section class="numbers-strip page-wrap" aria-label="Project facts">
+      <div><span class="strip-number">1,200</span><span class="strip-label">climate observations</span><small>synthetic practice dataset</small></div>
+      <div><span class="strip-number">5</span><span class="strip-label">regression models compared</span><small>same test-set evaluation</small></div>
+      <div><span class="strip-number">1,337</span><span class="strip-label">insurance records analysed</span><small>after de-duplication</small></div>
+      <div><span class="strip-number">SQL · BI · ML</span><span class="strip-label">from query to model</span><small>a growing toolkit</small></div>
+    </section>
+
+    <section class="section page-wrap" id="projects">
+      <div class="section-heading">
+        <div><div class="eyebrow section-eyebrow">SELECTED WORK</div><h2>Projects with a question<br><span class="muted-heading">behind the chart.</span></h2></div>
+        <p>Business reporting, exploratory analysis, and predictive modelling. Each project shows the question, the approach, and what the evidence supports.</p>
+      </div>
+
+      <div class="project-toolbar">
+        <label class="search-wrap"><span aria-hidden="true">⌕</span><input id="project-search" type="search" placeholder="Search projects or tools…" aria-label="Search projects"></label>
+        <div class="filter-group" role="group" aria-label="Filter projects">
+          <button type="button" class="filter-button active" data-filter="all" aria-pressed="true">All work <span>8</span></button>
+          <button type="button" class="filter-button" data-filter="bi" aria-pressed="false">BI & reporting</button>
+          <button type="button" class="filter-button" data-filter="sql" aria-pressed="false">SQL & analysis</button>
+          <button type="button" class="filter-button" data-filter="ml" aria-pressed="false">Machine learning</button>
+        </div>
+      </div>
+      <p class="filter-status" id="filter-status" aria-live="polite">Showing all 8 projects.</p>
+
+      <div class="project-grid" id="project-grid">
+        <article class="project-card project-featured" data-category="bi" data-search="international breweries profit margin power bi brand country region dashboard business intelligence">
+          <div class="project-visual visual-breweries">
+            <div class="visual-top"><span class="visual-kicker">POWER BI / BUSINESS PERFORMANCE</span><span class="visual-icon">↗</span></div>
+            <div class="mock-title">Profit margin <span>overview</span></div>
+            <div class="mock-bars" aria-hidden="true"><i style="height:38%"></i><i style="height:64%"></i><i style="height:49%"></i><i style="height:88%"></i><i style="height:59%"></i><i style="height:76%"></i><i style="height:43%"></i><i style="height:70%"></i></div>
+            <div class="mock-xlabels"><span>Market A</span><span>Market B</span><span>Market C</span><span>Market D</span></div>
+            <span class="visual-note">Illustrative thumbnail · PBIX supplied</span>
+          </div>
+          <div class="project-content"><div class="project-meta"><span>01 / BUSINESS INTELLIGENCE</span><span class="status-chip">Power BI</span></div><h3>International Breweries — Profit Margin Report</h3><p>Built a report view comparing profit margin across countries, regions and brands to help stakeholders identify where to investigate performance next.</p><div class="tag-row"><span>Power BI</span><span>DAX measure</span><span>Geographic comparison</span></div><div class="project-actions"><a href="downloads/international-breweries.pbix" download>Download PBIX <span aria-hidden="true">↓</span></a><a href="https://github.com/salako-precious" target="_blank" rel="noreferrer">GitHub profile <span aria-hidden="true">↗</span></a></div><p class="evidence-note">Numeric findings are not published here because the rendered report and measure values still need final validation.</p></div>
+        </article>
+
+        <article class="project-card" data-category="ml" data-search="climate temperature prediction gradient boosting random forest decision tree linear regression stacking python machine learning model comparison">
+          <div class="project-visual visual-climate"><div class="visual-top"><span class="visual-kicker">PYTHON / MODEL EVALUATION</span><span class="visual-icon">⌁</span></div><div class="climate-temp"><strong>22.8°</strong><span>mean temperature target</span></div><div class="mini-chart-lines" aria-hidden="true"><svg viewBox="0 0 320 88" preserveAspectRatio="none"><path d="M0,71 C20,66 25,36 46,42 S74,66 92,48 S116,16 138,30 S165,47 184,27 S218,35 237,15 S276,26 300,7 S312,18 320,5"/><path class="line-secondary" d="M0,78 C26,65 34,72 53,57 S83,76 104,61 S143,54 165,67 S192,49 211,53 S251,37 273,44 S301,31 320,35"/></svg></div><div class="visual-footer"><span>1,200 rows</span><span>5 regressors compared</span><span>synthetic data</span></div></div>
+          <div class="project-content"><div class="project-meta"><span>02 / MACHINE LEARNING</span><span class="status-chip">Python</span></div><h3>Climate Temperature Prediction</h3><p>Compared Linear Regression, Decision Tree, Random Forest, Gradient Boosting and Stacking. The work includes data checks, feature analysis, model evaluation and residual review.</p><div class="metric-callout"><div><strong>0.9409</strong><span>Gradient Boosting test R²</span></div><div><strong>1.5736°C</strong><span>test RMSE</span></div></div><div class="tag-row"><span>Pandas</span><span>scikit-learn</span><span>R² / RMSE</span></div><div class="project-actions"><a href="downloads/climate-model-comparison-readme.md" target="_blank" rel="noreferrer">Read project notes <span aria-hidden="true">↗</span></a><a href="downloads/climate-gradio-app.py" download>Get demo code <span aria-hidden="true">↓</span></a><a href="downloads/climate_regression_practice.csv" download>Dataset CSV <span aria-hidden="true">↓</span></a></div><p class="evidence-note">Scores come from a synthetic dataset and should not be interpreted as real-world climate forecast performance.</p></div>
+        </article>
+
+        <article class="project-card" data-category="sql" data-search="water services access water quality pollution queue sql power bi database drinking water public services">
+          <div class="project-visual visual-water"><div class="visual-top"><span class="visual-kicker">SQL / PUBLIC SERVICE DATA</span><span class="visual-icon">≋</span></div><div class="water-headline">Water services<br><b>exploration</b></div><div class="water-widgets"><div class="water-widget"><span>Source mix</span><div class="donut"><span>SQL</span></div></div><div class="water-widget water-columns"><span>Service indicators</span><div class="col-bars"><i style="height:74%"></i><i style="height:45%"></i><i style="height:63%"></i><i style="height:84%"></i><i style="height:34%"></i></div></div></div><div class="visual-note">Illustrative thumbnail · training scenario</div></div>
+          <div class="project-content"><div class="project-meta"><span>03 / SQL & VISUAL ANALYTICS</span><span class="status-chip">SQL + Power BI</span></div><h3>Water Services & Access Analysis</h3><p>Explores water-source types, service access, visit queues, water-quality scores and well-pollution results. SQL structures the data for location- and service-level questions, with a Power BI report for exploration.</p><div class="tag-row"><span>Joins & filters</span><span>Data dictionary</span><span>Power BI</span></div><div class="project-actions"><a href="downloads/md-services.sql" download>Download SQL data <span aria-hidden="true">↓</span></a><a href="downloads/water-services-dashboard.pbix" download>Download PBIX <span aria-hidden="true">↓</span></a></div><p class="evidence-note">This is a training scenario; do not treat its locations or records as verified real-world service statistics.</p></div>
+        </article>
+
+        <article class="project-card" data-category="sql" data-search="digital skill academy amazon product reviews kultra mega stores kms sql excel pivot tables data analysis">
+          <div class="project-visual visual-sql"><div class="visual-top"><span class="visual-kicker">SQL / EXCEL CASE STUDIES</span><span class="visual-icon">⌘</span></div><div class="code-window"><div class="code-window-top"><i></i><i></i><i></i><span>analysis.sql</span></div><pre><span class="code-purple">SELECT</span> category, region,
+       <span class="code-green">SUM</span>(sales) <span class="code-purple">AS</span> total_sales
+<span class="code-purple">FROM</span> orders
+<span class="code-purple">WHERE</span> order_year <span class="code-orange">BETWEEN</span> 2009 <span class="code-orange">AND</span> 2012
+<span class="code-purple">GROUP BY</span> category, region;</pre></div><div class="visual-footer"><span>Excel pivots</span><span>SQL queries</span><span>Reporting</span></div></div>
+          <div class="project-content"><div class="project-meta"><span>04 / ANALYTICS FOUNDATIONS</span><span class="status-chip">SQL + Excel</span></div><h3>Digital Skill Academy Case Studies</h3><p>Practical analysis work covering Amazon product and review data, plus a Kultra Mega Stores scenario focused on order data, business performance and SQL-based reporting questions.</p><div class="tag-row"><span>CASE statements</span><span>SQL views</span><span>Excel dashboards</span></div><div class="project-actions"><a href="https://github.com/salako-precious/Digital-Skill-Academy-Project" target="_blank" rel="noreferrer">Explore repository <span aria-hidden="true">↗</span></a><a href="https://github.com/salako-precious/Digital-Skill-Academy-Project/blob/main/project.sql" target="_blank" rel="noreferrer">View SQL file <span aria-hidden="true">↗</span></a></div></div>
+        </article>
+
+        <article class="project-card" data-category="ml" data-search="medical insurance charges exploratory data analysis bmi smoking python pandas features healthcare costs">
+          <div class="project-visual visual-insurance"><div class="visual-top"><span class="visual-kicker">PYTHON / EXPLORATORY ANALYSIS</span><span class="visual-icon">⌕</span></div><div class="insurance-compare"><div class="insurance-number"><span>Smokers · avg. charge</span><strong>$32,050</strong><div class="charge-bar"><i style="width:100%"></i></div></div><div class="insurance-number"><span>Non-smokers · avg. charge</span><strong>$8,441</strong><div class="charge-bar"><i style="width:26.3%"></i></div></div></div><div class="visual-footer"><span>1,337 records after de-duplication</span></div></div>
+          <div class="project-content"><div class="project-meta"><span>05 / EXPLORATORY DATA ANALYSIS</span><span class="status-chip">Python</span></div><h3>Medical Insurance Charges EDA</h3><p>Investigated how age, BMI, smoking status, region and family size relate to medical charges. Work includes duplicate checks, descriptive statistics, feature engineering, correlation analysis and visual comparisons.</p><div class="tag-row"><span>Pandas</span><span>BMI categories</span><span>Data visualisation</span></div><div class="project-actions"><a href="https://github.com/salako-precious/My-training-in-data-science-" target="_blank" rel="noreferrer">Read GitHub project <span aria-hidden="true">↗</span></a></div><p class="evidence-note">The charge gap is an association in this dataset, not proof that smoking alone caused the difference.</p></div>
+        </article>
+
+        <article class="project-card" data-category="ml" data-search="FMCG sales revenue prediction advertising spend simple linear regression simulated Nigeria regional product python">
+          <div class="project-visual visual-fmcg"><div class="visual-top"><span class="visual-kicker">PYTHON / REVENUE MODELLING</span><span class="visual-icon">↗</span></div><div class="fmcg-head"><span>Advertising spend ↔ revenue</span><strong>R² 0.9115</strong></div><div class="scatterplot" aria-hidden="true"><svg viewBox="0 0 320 120" preserveAspectRatio="none"><path class="scatter-regression" d="M12,112 L307,12"/><g class="scatter-points"><circle cx="30" cy="101" r="3"/><circle cx="48" cy="90" r="3"/><circle cx="53" cy="99" r="3"/><circle cx="82" cy="74" r="3"/><circle cx="91" cy="80" r="3"/><circle cx="107" cy="69" r="3"/><circle cx="127" cy="60" r="3"/><circle cx="141" cy="68" r="3"/><circle cx="166" cy="49" r="3"/><circle cx="182" cy="57" r="3"/><circle cx="199" cy="43" r="3"/><circle cx="215" cy="50" r="3"/><circle cx="235" cy="32" r="3"/><circle cx="250" cy="39" r="3"/><circle cx="266" cy="22" r="3"/><circle cx="292" cy="18" r="3"/></g></svg></div><div class="visual-footer"><span>7 regions</span><span>6 product lines</span><span>simulated data</span></div></div>
+          <div class="project-content"><div class="project-meta"><span>06 / PREDICTIVE ANALYTICS</span><span class="status-chip">Regression</span></div><h3>FMCG Sales Revenue Prediction</h3><p>Tested a simple linear-regression baseline to study the relationship between advertising spend and sales revenue across simulated monthly records for Nigerian FMCG regions and product lines.</p><div class="metric-callout"><div><strong>1,512</strong><span>simulated records</span></div><div><strong>0.9115</strong><span>reported R²</span></div></div><div class="tag-row"><span>EDA</span><span>Linear Regression</span><span>RMSE</span></div><div class="project-actions"><a href="https://github.com/salako-precious/FMCG-Sales-Revenue-Prediction-Simple-Linear-Regression-" target="_blank" rel="noreferrer">Explore repository <span aria-hidden="true">↗</span></a></div><p class="evidence-note">The dataset is simulated for learning; metrics are not evidence of performance on proprietary sales records.</p></div>
+        </article>
+
+        <article class="project-card" data-category="bi" data-search="sales inventory performance dashboard power bi excel multiple data sources regional kpis operations">
+          <div class="project-visual visual-sales"><div class="visual-top"><span class="visual-kicker">POWER BI / OPERATIONS</span><span class="visual-icon">▤</span></div><div class="sales-kpi-row"><div><span>SALES TREND</span><strong>↗</strong></div><div><span>INVENTORY</span><strong>◫</strong></div><div><span>REGIONS</span><strong>⌖</strong></div></div><div class="sales-line-chart" aria-hidden="true"><svg viewBox="0 0 320 90" preserveAspectRatio="none"><path d="M0,65 L35,60 L66,68 L98,43 L130,51 L159,25 L191,38 L225,19 L256,32 L287,12 L320,17"/><path class="sales-area" d="M0,65 L35,60 L66,68 L98,43 L130,51 L159,25 L191,38 L225,19 L256,32 L287,12 L320,17 L320,90 L0,90 Z"/></svg></div><div class="visual-footer"><span>Consolidated Excel sources</span><span>Illustrative layout</span></div></div>
+          <div class="project-content"><div class="project-meta"><span>07 / BUSINESS INTELLIGENCE</span><span class="status-chip">Power BI + Excel</span></div><h3>Sales & Inventory Performance Dashboard</h3><p>Combined multiple Excel sources into a Power BI reporting view focused on regional sales performance and inventory. The emphasis was on consistent data preparation, operational KPIs and readable visuals.</p><div class="tag-row"><span>Data modelling</span><span>KPI reporting</span><span>Excel</span></div><div class="project-actions"><a href="https://github.com/salako-precious" target="_blank" rel="noreferrer">More work on GitHub <span aria-hidden="true">↗</span></a></div></div>
+        </article>
+
+        <article class="project-card" data-category="ml" data-search="systolic blood pressure prediction streamlit ridge regression preprocessing educational research prototype health data">
+          <div class="project-visual visual-bp"><div class="visual-top"><span class="visual-kicker">PYTHON / PREDICTION PROTOTYPE</span><span class="visual-icon">⌁</span></div><div class="bp-display"><div><span>SYSTOLIC BP</span><strong>Prediction workflow</strong><small>Ridge Regression · 80/20 split</small></div><div class="bp-pulse" aria-hidden="true"><svg viewBox="0 0 150 48"><path d="M0,25 L29,25 L42,24 L51,7 L61,40 L72,15 L81,25 L105,25 L117,23 L126,25 L150,25"/></svg></div></div><div class="visual-footer"><span>Imputation</span><span>Scaling</span><span>One-hot encoding</span></div></div>
+          <div class="project-content"><div class="project-meta"><span>08 / APPLIED MODELLING</span><span class="status-chip">Streamlit</span></div><h3>Systolic Blood Pressure Prediction Prototype</h3><p>Built an educational interface using numeric and categorical inputs, imputation, standardisation and one-hot encoding before a Ridge Regression model. Evaluation uses R², MAE and RMSE.</p><div class="tag-row"><span>scikit-learn</span><span>Preprocessing pipeline</span><span>Streamlit</span></div><div class="project-actions"><a href="downloads/systolic-bp-prototype-readme.md" target="_blank" rel="noreferrer">Read prototype notes <span aria-hidden="true">↗</span></a><a href="downloads/systolic-bp-prototype.py" download>Download app code <span aria-hidden="true">↓</span></a></div><p class="evidence-note">For learning only. Not for medical diagnosis, treatment, or clinical decision-making.</p></div>
+        </article>
+      </div>
+      <div class="empty-state" id="empty-state" hidden><strong>No matching projects found.</strong><span>Try another keyword or choose “All work”.</span></div>
+    </section>
+
+    <section class="section skills-section" id="toolkit">
+      <div class="page-wrap">
+        <div class="section-heading">
+          <div><div class="eyebrow section-eyebrow">TOOLS I USE</div><h2>My toolkit is growing.<br><span class="muted-heading">The fundamentals stay.</span></h2></div>
+          <p>Tools matter, but so do data quality, sound evaluation, clear assumptions and telling the story without overstating the evidence.</p>
+        </div>
+        <div class="toolkit-grid">
+          <div class="toolkit-card"><span class="tool-icon icon-sql">SQL</span><h3>Query & prepare</h3><p>Extracting, filtering, joining and grouping data; working with views, case statements and data dictionaries.</p><small>Practised through case studies</small></div>
+          <div class="toolkit-card"><span class="tool-icon icon-bi">▥</span><h3>Power BI & Excel</h3><p>PivotTables, formulas, KPI reporting, data transformation, DAX measures and business-facing dashboards.</p><small>Dashboards & reporting</small></div>
+          <div class="toolkit-card"><span class="tool-icon icon-python">Py</span><h3>Python & EDA</h3><p>Pandas, NumPy, data validation, descriptive statistics, feature engineering and visual exploration.</p><small>Analysis & preparation</small></div>
+          <div class="toolkit-card"><span class="tool-icon icon-ml">ƒ(x)</span><h3>Machine learning</h3><p>Regression workflows, train-test splits, preprocessing pipelines and evaluation using R², MAE and RMSE.</p><small>Actively building depth</small></div>
+          <div class="toolkit-card toolkit-grafana"><span class="tool-icon icon-grafana">◉</span><h3>Grafana & observability</h3><p>Learning how data sources, time-series panels, dashboard variables and alerts come together for monitoring.</p><small><span class="learn-pulse"></span> Learning in progress</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section page-wrap grafana-section" id="grafana">
+      <div class="grafana-intro">
+        <div class="eyebrow section-eyebrow">WHAT I'M LEARNING NEXT</div>
+        <h2>From dashboards<br>to <span class="gradient-text">observability.</span></h2>
+        <p>I want to learn Grafana by building something practical—not just clicking around the interface. My first goal is to turn a trusted data source into a clear, refreshable dashboard and learn how to monitor changing values over time.</p>
+        <a class="button button-primary" href="https://grafana.com/docs/grafana/latest/getting-started/" target="_blank" rel="noreferrer">Start with Grafana docs <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="roadmap">
+        <div class="roadmap-top"><strong>MY GRAFANA LEARNING PATH</strong><span>01 → 04</span></div>
+        <div class="roadmap-step"><span class="step-number">01</span><div><div class="step-label">FOUNDATIONS <span class="step-status status-done">CURRENT FOCUS</span></div><h3>Connect a data source</h3><p>Understand what Grafana queries, where the data lives, and the difference between source data and a visual panel.</p><small>Start with sample data or a local SQL database.</small></div></div>
+        <div class="roadmap-step"><span class="step-number">02</span><div><div class="step-label">VISUALISATION <span class="step-status">NEXT</span></div><h3>Build a useful dashboard</h3><p>Create time-series, stat and table panels; organise them around one monitoring question rather than collecting charts.</p><small>Deliverable: a water-services or sales monitoring dashboard.</small></div></div>
+        <div class="roadmap-step"><span class="step-number">03</span><div><div class="step-label">INTERACTION</div><h3>Add variables & time filters</h3><p>Let people compare regions, products or source types without duplicating every chart.</p><small>Deliverable: dashboard filters that support investigation.</small></div></div>
+        <div class="roadmap-step"><span class="step-number">04</span><div><div class="step-label">MONITORING</div><h3>Test thresholds & alerts</h3><p>Set a meaningful condition, test how it behaves, and add context so an alert helps someone decide what to do.</p><small>Deliverable: documented demo rule—not a production alert.</small></div></div>
+        <div class="roadmap-links"><a href="https://grafana.com/docs/grafana/latest/datasources/" target="_blank" rel="noreferrer">Data sources ↗</a><a href="https://grafana.com/docs/grafana/latest/panels-visualizations/" target="_blank" rel="noreferrer">Panels & visualisations ↗</a><a href="https://grafana.com/docs/grafana/latest/alerting/" target="_blank" rel="noreferrer">Alerting ↗</a></div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="page-wrap about-grid">
+        <div><div class="eyebrow section-eyebrow">A LITTLE ABOUT ME</div><h2>Curious by nature.<br><span class="muted-heading">Careful with evidence.</span></h2></div>
+        <div class="about-copy"><p>I enjoy the process behind a reliable insight: understanding the question, checking the quality of the data, testing the analysis and presenting the result so another person can use it.</p><p>My recent work spans business performance, customer and insurance data, water services, climate modelling and a health-focused prediction prototype. I'm building the technical depth to move from reporting what happened to exploring why it happened and what might happen next.</p><div class="principles"><span><b>01</b> Data quality first</span><span><b>02</b> Evaluate, don't assume</span><span><b>03</b> Make the visual useful</span></div></div>
+      </div>
+    </section>
+
+    <section class="section contact-section page-wrap" id="contact">
+      <div class="contact-card"><div class="contact-orb" aria-hidden="true"></div><div class="eyebrow">LET'S CONNECT</div><h2>Good questions make<br>better analysis.</h2><p>I'm open to entry-level data analyst opportunities, collaborative projects and conversations about analytics, dashboards, and learning Grafana.</p><div class="contact-actions"><a class="button button-primary" href="mailto:salakooluwaseunayo@gmail.com">Email me <span aria-hidden="true">↗</span></a><a class="button button-outline" href="https://linkedin.com/in/oluwaseunayo-salako" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a class="button button-outline" href="https://github.com/salako-precious" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a></div><div class="contact-email"><span>EMAIL</span><a href="mailto:salakooluwaseunayo@gmail.com">salakooluwaseunayo@gmail.com</a><button id="copy-email" class="text-button" type="button">Copy email</button><span id="copy-status" class="sr-only" aria-live="polite"></span></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer page-wrap"><a class="brand brand-footer" href="#home"><span class="brand-mark">PS<span>.</span></span><span class="brand-copy"><strong>Precious Salako</strong><small>DATA · INSIGHT · IMPACT</small></span></a><p>Made with curiosity, care, and a growing analytics toolkit.</p><div><a href="#home">Back to top ↑</a><span>© <span id="year"></span> Precious Salako</span></div></footer>
+</body>
+</html>
